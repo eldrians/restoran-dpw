@@ -22,9 +22,8 @@
     <div class="bg-white shadow-md" x-data="{ isOpen: false }">
         <nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
             <div class="flex items-center justify-between">
-                <a class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 md:text-2xl hover:text-green-400"
-                    href="#">
-                    TailFood
+                <a class="text-xl font-bold  text-purple-600 md:text-2xl hover:text-purple-900" href="#">
+                    AC RESTAURANT
                 </a>
                 <!-- Mobile menu button -->
                 <div @click="isOpen = !isOpen" class="flex md:hidden">
@@ -43,14 +42,13 @@
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
             <div :class="isOpen ? 'flex' : 'hidden'"
                 class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                    href="/">Home</a>
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                    href="{{ route('categories.index') }}">Categories</a>
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                    href="{{ route('menus.index') }}">Our Menu</a>
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                    href="{{ route('reservations.step.one') }}">Make Reservation</a>
+                <a class="text-transparent bg-clip-text bg-purple-600 hover:text-purple-900" href="/">Home</a>
+                <a class="text-transparent bg-clip-text bg-purple-600 hover:text-purple-900"
+                    href="{{ route('categories.index') }}">Kategori</a>
+                <a class="text-transparent bg-clip-text bg-purple-600 hover:text-purple-900"
+                    href="{{ route('menus.index') }}">Menu Kami</a>
+                <a class="text-transparent bg-clip-text bg-purple-600 hover:text-purple-900"
+                    href="{{ route('reservations.step.one') }}">Buat Reservasi</a>
 
             </div>
         </nav>
@@ -86,7 +84,8 @@
                 <a class="ml-3">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                         stroke-width="2" class="w-6 h-6 text-pink-400" viewBox="0 0 24 24">
-                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5">
+                        </rect>
                         <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                     </svg>
                 </a>

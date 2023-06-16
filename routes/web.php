@@ -12,8 +12,9 @@ use App\Http\Controllers\Frontend\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
 
+Route::get('/axel', [WelcomeController::class, 'index']);
 Route::get('/', [WelcomeController::class, 'index']);
-Route::get('/categories', [FrontendCategoryController::class, 'index'])->name('categories.index');
+Route::get('/category', [FrontendCategoryController::class, 'index'])->name('categories.index');
 Route::get('/categories/{category}', [FrontendCategoryController::class, 'show'])->name('categories.show');
 Route::get('/menus', [FrontendMenuController::class, 'index'])->name('menus.index');
 Route::get('/reservation/step-one', [FrontendReservationController::class, 'stepOne'])->name('reservations.step.one');
